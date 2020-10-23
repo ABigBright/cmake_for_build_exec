@@ -1,3 +1,4 @@
 // the configured options and settings for Tutorial
 #define Tutorial_VERSION_MAJOR @cmake_example_VERSION_MAJOR@
 #define Tutorial_VERSION_MINOR @cmake_example_VERSION_MINOR@
+#cmakedefine USE_LIB1

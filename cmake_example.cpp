@@ -1,5 +1,8 @@
 #include <iostream>
 #include "version_def.h"
+#ifdef USE_LIB1
+#include <lib1.h>
+#endif
 
 using namespace std;
 
@@ -11,6 +14,10 @@ int main(int argc, char *argv[])
         std::cout << "Usage: " << argv[0] << " number" << std::endl;
         return 1;
     }
+
+#ifdef USE_LIB1
+    lib1_func1();
+#endif
 }
 
 
