@@ -12,9 +12,6 @@ configure_file(version_def.h.in ${CMAKE_CURRENT_SOURCE_DIR}/version_def.h)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# set the build system 
-set(CMAKE_MAKE_PROGRAM, ninja)
-
 # add the executable
 add_executable(cmake_example cmake_example.cpp)
 
@@ -33,5 +30,4 @@ endif()
 target_include_directories(cmake_example PUBLIC 
     /home/briq/studio/cmake_example
     ${EXTRA_INCLUDE}
-    )
-
+)
